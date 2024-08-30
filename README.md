@@ -1,33 +1,28 @@
-<h2>Normal Image to Cartoon Image using Python</h2>
-This project demonstrates how to convert normal images into cartoon-style images using Python. The notebook leverages tools like Gradio for a user-friendly interface and integrates with Hugging Face for machine-learning model deployment.
-Project Overview<br>
-PART I: Style Transfer with Gradio UI<br>
-This section covers setting up a simple web interface using Gradio to demonstrate the style transfer model.<br>
-Gradio is an open-source Python library that allows you to demo your machine-learning model with a user-friendly web interface.<br>
-<h2>Installation</h2><br>
-To get started, you'll need to clone the repository and install the necessary dependencies.<br>
-Clone the Repository<br>
-<h2>bash</h2><br>
-git clone https://github.com/williamyang1991/VToonify.git $CODE_DIR     <br>
+Normal Image to Cartoon Image using Python
+Overview
+This project converts normal images into cartoon-style images using Python. It utilizes Gradio for a user-friendly interface and integrates with Hugging Face for machine learning model deployment.
 
-<h2>Install Dependencies</h2><br>
-You can install the required packages using pip:<br>
-pip install gradio huggingface_hub                         <br>
+File Structure
+main.py: Main script to run the cartoon image generation.
+requirements.txt: Contains the list of dependencies required to run the project.
+utils.py: Utility functions used in the project for image processing.
+model.py: Script that loads and processes the machine learning model for style transfer.
+interface.py: Script that sets up the Gradio UI for interacting with the model.
+Usage
+Install Python 3.x and the required libraries from requirements.txt.
+Clone or download the project repository.
+Choose the appropriate script (main.py, interface.py) based on your use case.
+Run the selected script to start the image conversion or interact with the UI.
+Example Usage
+For image conversion using the model:
 
-Additional Setup    <br>
-Ensure you have the necessary models and datasets downloaded. You might need to configure Hugging Face for specific tasks.  <br>
-Usage  <br>
-After setting up your environment, you can run the notebook to start converting images to cartoon-style:  <br>
+bash
+Copy code
+python main.py --input_image path/to/image.jpg --output_image path/to/output.jpg
+To launch the Gradio UI for interactive usage:
 
-<h2>Bash</h2>
-
-jupyter notebook Normal\ image\ to\ cartoon\ image\ using\ python.ipynb      <br>
-
-Running the Gradio Interface    <br>
-The Gradio interface can be launched directly from the notebook to visualize and interact with the style transfer model. <br>
-Notes  <br>
-This project integrates with Hugging Face, a platform that provides tools to build, train, and deploy machine learning models.   <br>
-The style transfer is part of a broader project called VToonify, which you can explore for more advanced image-to-cartoon conversions.  <br>
-<h2>License</h2><br>
-This project is open source and available under the MIT License. <br>
-
+bash
+Copy code
+python interface.py
+Contributing
+Contributions are welcome! If you have suggestions, bug reports, or enhancements, feel free to open an issue or create a pull request.
